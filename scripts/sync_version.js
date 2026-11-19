@@ -42,6 +42,7 @@ const STATIC_TAG_ASSETS = [
   'js/map_data.js',
   'js/lore_core.js',
   'js/atlas_track.js',
+  'js/public_notice.js',
   ...SYNC_CONTROLLER_SCRIPTS,
 ];
 
