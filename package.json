@@ -1,0 +1,12 @@
+{
+  "name": "jiangshan-map-public",
+  "private": true,
+  "description": "Public static build of 江山时序 Jiangshan Atlas. Omits CHGIS/Hartwell prefecture boundaries and DataV/Amap modern province boundaries.",
+  "scripts": {
+    "build": "node scripts/build_public.js",
+    "check:public": "node scripts/check_public_dist.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

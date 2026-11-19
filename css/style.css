@@ -56,8 +56,43 @@ h2 {
   height: 100dvh;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
   overflow: hidden;
+}
+
+.restricted-notice {
+  margin: 0;
+  padding: 6px 16px 7px;
+  background: #f3e2c4;
+  color: #5c3b22;
+  font-size: 12.5px;
+  line-height: 1.45;
+  border-bottom: 1px solid rgba(181, 69, 47, 0.28);
+}
+
+.restricted-notice[hidden] {
+  display: none !important;
+}
+
+.restricted-notice a {
+  color: #8c3a2a;
+}
+
+.restricted-credit {
+  display: inline;
+  margin-left: 0.4em;
+  white-space: nowrap;
+}
+
+.layer-omission {
+  margin: 4px 0 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
+
+.layer-chip input:disabled + span {
+  opacity: 0.45;
 }
 
 /* Navigation Header */
@@ -5737,7 +5772,7 @@ html.is-embed body {
 }
 
 html.is-embed #atlas-shell {
-  grid-template-rows: 0 minmax(0, 1fr) auto;
+  grid-template-rows: 0 auto minmax(0, 1fr) auto;
 }
 
 html.is-embed #nav-bar {
